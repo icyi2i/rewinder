@@ -1,0 +1,32 @@
+// ================================================================
+// Colors
+// ================================================================
+
+$colors: (
+  "primary": #ff8552,
+  "light": #e6e6e6,
+  "dark": #2b2a2f,
+  "white": #f2f4ff,
+  "black": #000,
+);
+
+@function color($shade) {
+  @return map-get($colors, $shade);
+}
+
+// ================================================================
+// Fonts
+// ================================================================
+
+@font-face {
+  font-family: Nunito;
+  src: url("./fonts/Nunito.ttf");
+}
+
+$fonts: (
+  "primary": Nunito,
+);
+
+@function font($face) {
+  @return map-get($fonts, $face);
+}

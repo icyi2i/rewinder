@@ -1,0 +1,19 @@
+@import "./theme/style.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: color("dark");
+  background-color: color("light");
+  font-family: font("primary");
+}
+
+.container {
+  padding: 32px;
+}
